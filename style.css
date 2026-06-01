@@ -1,0 +1,64 @@
+#background {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#spacer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    text-align: right;
+}
+
+html, body, p{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#time {
+    font-size: 15vh;
+    margin: 1vw;
+}
+
+.gloss {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, .3);
+    display: inline-block;
+}
+
+#weather {
+    font-size: 5vh;
+    margin: 1vw;
+}
+
+#fact {
+    font-size: 1.75vh;
+    margin: 1vh;
+    opacity: .75;
+    font-family: sans-serif;
+    font-style: italic;
+    animation: fadein 2s ease-in;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: .75;}
+}
