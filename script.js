@@ -14,7 +14,7 @@ async function getBackground() {
         console.log(result);
 
         const fact = result.explanation.split('. ').slice(0, 2).join('. ') + '.';
-        document.getElementById("fact").innerText = `~${result.title}: ${fact}`;
+        document.getElementById("fact").innerText = `Image: ${result.title}: ${fact}`;
 
         if(result.media_type !== "image"){
             console.log("APOD returned a non-image media type.");
