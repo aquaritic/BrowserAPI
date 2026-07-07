@@ -1,4 +1,28 @@
 const background = document.getElementById("background");
+const search = document.getElementById("search");
+const fidgetBtn = document.getElementById("fidgetBtn");
+const fidgetCount = document.getElementById("fidgetCount");
+
+let count = 0;
+
+fidgetBtn.addEventListener("click", () => {
+    count++;
+    fidgetCount.innerText = count;
+
+    fidgetBtn.Btn.style.transform = "scale(.85)";
+    setTimeout(() => {
+        fidgetBtn.style.transform = "scale(1)";
+    }, 100);
+});
+
+search.addEventListener("keydown", (e) => {
+    if(e.key === "Enter"){
+        const query = search.value.trim();
+        if(query.length > 0){
+            window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+    }
+});
 
 async function getBackground() {
     const url = "https://api.nasa.gov/planetary/apod?api_key=1VdEDgM6P6xdRXNc7HlPj234s1lcVxEJagXDNklA"

@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>BrowserAPI</title>
+        <link href ="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <canvas id="cursor"></canvas>
         <div id = "background">
             <div id = "spacer">
                 <div class = "gloss">
@@ -14,8 +16,16 @@
                 <div class = "gloss">
                 <p id = "fact"></p>
                 </div>
+                <div id="searchBar">
+                    <input id="search" type="text" placeholder="..Search Google..">
+                </div>
+                <div id="fidget">
+                    <div id="fidgetBtn"></div>
+                    <p id="fidgetCount">0</p>
+                </div>
             </div>
         </div>
         <script src = "script.js" defer></script>
+        <script src = "cursor.js" defer></script>
     </body>
 </html>
