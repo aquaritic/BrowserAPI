@@ -9,7 +9,7 @@ fidgetBtn.addEventListener("click", () => {
     count++;
     fidgetCount.innerText = count;
 
-    fidgetBtn.Btn.style.transform = "scale(.85)";
+    fidgetBtn.style.transform = "scale(.85)";
     setTimeout(() => {
         fidgetBtn.style.transform = "scale(1)";
     }, 100);
