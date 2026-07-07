@@ -17,15 +17,17 @@
     text-align: center;
 }
 
-html, body, p{
+html, body{
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
     font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
 }
 
 p {
     color: white;
-    font-family: sans-serif;
     font-weight: bold;
 }
 
@@ -127,8 +129,4 @@ p {
     font-size: 3vh;
     color: white;
     font-family: 'Orbitron', sans-serif;
-}
-
-body{
-    overflow: hidden;
 }
