@@ -65,7 +65,7 @@ p {
     to {opacity: .75;}
 }
 
-#cursorStars{
+#cursor{
     position: fixed;
     top: 0;
     left: 0;
